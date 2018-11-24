@@ -1,0 +1,68 @@
+{
+    "name": "jeroenvanderlaan/event-store",
+    "description": "An Event Store implementation",
+    "type": "library",
+    "keywords": ["event store", "pdo", "event sourcing", "event driven design", "event"],
+    "homepage": "https://github.com/JeroenVanDerLaan/event-store",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+
+    "authors": [
+        {
+            "name": "Jeroen van der Laan",
+            "email": "jeroenvanderlaan91@gmail.com",
+            "homepage": "https://github.com/JeroenVanDerLaan/",
+            "role": "Developer"
+        }
+    ],
+
+    "require": {
+        "ext-pdo": "*"
+    },
+
+    "require-dev": {
+        "ext-pdo_sqlite": "*",
+        "phpunit/phpunit": "^7.2"
+    },
+
+    "suggest": {
+    },
+
+    "autoload": {
+        "psr-4": {
+            "Jeroenvanderlaan\\EventStore\\": "src/"
+        }
+    },
+
+    "autoload-dev": {
+        "psr-4": {
+            "Jeroenvanderlaan\\EventStore\\Tests\\": "tests/",
+            "Jeroenvanderlaan\\EventStore\\Tests\\Unit\\": "tests/unit",
+            "Jeroenvanderlaan\\EventStore\\Tests\\Component\\": "tests/component"
+        }
+    },
+
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/JeroenVanDerLaan/event-store"
+        }
+    ],
+
+    "config": {
+        "platform": {
+            "php": "7.2"
+        }
+    },
+
+    "scripts": {
+    },
+
+    "extra": {
+    },
+
+    "bin": [
+        "bin/*"
+    ]
+}
